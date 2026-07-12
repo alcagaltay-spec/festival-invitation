@@ -5,37 +5,37 @@ const artists = [
     name: "Hande Ünsal",
     date: "28 Ağustos",
     time: "20.00",
-    image: "/images/artists/hande-unsal.webp",
+    image: "/festival-invitation/images/artists/hande-unsal.webp",
   },
   {
     name: "Berkay",
     date: "28 Ağustos",
     time: "22.00",
-    image: "/images/artists/berkay.webp",
+    image: "/festival-invitation/images/artists/berkay.webp",
   },
   {
     name: "Tuğba Yurt",
     date: "29 Ağustos",
     time: "20.00",
-    image: "/images/artists/tugba-yurt.webp",
+    image: "/festival-invitation/images/artists/tugba-yurt.webp",
   },
   {
     name: "Murat Boz",
     date: "29 Ağustos",
     time: "22.00",
-    image: "/images/artists/murat-boz.webp",
+    image: "/festival-invitation/images/artists/murat-boz.webp",
   },
   {
     name: "Ceza",
     date: "30 Ağustos",
     time: "20.00",
-    image: "/images/artists/ceza.webp",
+    image: "/festival-invitation/images/artists/ceza.webp",
   },
   {
     name: "Hadise",
     date: "30 Ağustos",
     time: "22.00",
-    image: "/images/artists/hadise.webp",
+    image: "/festival-invitation/images/artists/hadise.webp",
   },
 ];
 

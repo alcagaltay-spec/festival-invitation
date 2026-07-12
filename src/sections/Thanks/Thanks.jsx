@@ -12,7 +12,7 @@ function Thanks() {
       <div className="thanks__content">
         <img
           className="thanks__logo"
-          src="/images/logos/tosya-logo.png"
+          src="/festival-invitation/images/logos/tosya-logo.png"
           alt="Tosya Belediyesi logosu"
           onError={(event) => {
             event.currentTarget.style.display = "none";

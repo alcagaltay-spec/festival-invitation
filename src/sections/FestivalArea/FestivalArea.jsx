@@ -31,7 +31,7 @@ function FestivalArea() {
             <div className="festival-area__image-wrap">
               <img
                 className="festival-area__image"
-                src="/images/map/cumhuriyet-meydani.webp"
+                src="/festival-invitation/images/map/cumhuriyet-meydani.webp"
                 alt="Tosya Cumhuriyet Meydanı festival alanı"
                 loading="lazy"
               />

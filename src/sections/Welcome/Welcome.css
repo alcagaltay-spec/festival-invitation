@@ -15,7 +15,7 @@
       rgba(8, 25, 21, 0.54) 48%,
       rgba(5, 17, 14, 0.92) 100%
     ),
-    url("/images/hero/tosya-sunrise.webp") center center / cover no-repeat,
+    url("/festival-invitation/images/hero/tosya-sunrise.webp") center center / cover no-repeat,
     var(--color-green-dark);
 }
 
