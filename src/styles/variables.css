@@ -1,0 +1,26 @@
+:root {
+  --color-ivory: #f4f0e7;
+  --color-cream: #e8dfd0;
+  --color-stone: #c5b89f;
+
+  --color-green: #173b32;
+  --color-green-soft: #285247;
+  --color-green-dark: #0c211c;
+
+  --color-gold: #c8a66a;
+  --color-gold-light: #e1c998;
+  --color-gold-dark: #8d7043;
+
+  --color-white: #ffffff;
+  --color-black: #101613;
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Montserrat", Arial, sans-serif;
+
+  --page-padding-mobile: 24px;
+  --page-padding-desktop: 72px;
+
+  --transition-fast: 250ms ease;
+  --transition-normal: 500ms ease;
+  --transition-slow: 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}

@@ -1,0 +1,320 @@
+.story {
+  position: relative;
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  overflow: hidden;
+  padding: 88px var(--page-padding-mobile);
+  isolation: isolate;
+
+  background: #102d26;
+  color: var(--color-ivory);
+}
+
+.story__background {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+
+  background:
+    url("/images/history/tosya-story.webp")
+    center center / cover no-repeat;
+
+  transform: scale(1.04);
+}
+
+.story__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 18, 15, 0.68) 0%,
+      rgba(8, 30, 24, 0.86) 48%,
+      rgba(4, 18, 15, 0.96) 100%
+    ),
+    radial-gradient(
+      circle at 50% 18%,
+      rgba(209, 176, 112, 0.18),
+      transparent 34%
+    );
+}
+
+.story::before {
+  position: absolute;
+  inset: 20px;
+  z-index: -1;
+  content: "";
+
+  border: 1px solid rgba(225, 201, 152, 0.14);
+  pointer-events: none;
+}
+
+.story::after {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  opacity: 0.04;
+  pointer-events: none;
+
+  background-image:
+    radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.75) 0.5px,
+      transparent 0.7px
+    );
+
+  background-size: 5px 5px;
+}
+
+.story__container {
+  width: min(100%, 1020px);
+}
+
+.story__header {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.story__eyebrow {
+  color: var(--color-gold-light);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.story h2 {
+  margin-top: 20px;
+
+  color: var(--color-ivory);
+  font-family: var(--font-display);
+  font-size: clamp(2.55rem, 10vw, 5rem);
+  font-weight: 500;
+  line-height: 0.96;
+  letter-spacing: -0.035em;
+}
+
+.story h2 span {
+  display: block;
+  margin-top: 12px;
+
+  color: var(--color-gold-light);
+  font-size: 0.56em;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.story__divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  width: min(100%, 220px);
+  margin: 27px auto 0;
+}
+
+.story__divider span {
+  width: 78px;
+  height: 1px;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(225, 201, 152, 0.6)
+  );
+}
+
+.story__divider span:last-child {
+  transform: rotate(180deg);
+}
+
+.story__divider i {
+  color: var(--color-gold-light);
+  font-size: 0.43rem;
+  font-style: normal;
+}
+
+.story__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 34px;
+
+  max-width: 840px;
+  margin: 62px auto 0;
+}
+
+.story__number {
+  color: rgba(225, 201, 152, 0.92);
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 24vw, 9rem);
+  line-height: 0.7;
+  text-align: center;
+}
+
+.story__number span {
+  display: block;
+  margin-top: 18px;
+
+  font-family: var(--font-body);
+  font-size: 0.08em;
+  font-weight: 500;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+}
+
+.story__text {
+  display: grid;
+  gap: 21px;
+}
+
+.story__text p {
+  color: rgba(244, 240, 231, 0.78);
+  font-family: var(--font-display);
+  font-size: clamp(1.08rem, 4.3vw, 1.34rem);
+  line-height: 1.72;
+}
+
+.story__text p:first-child::first-letter {
+  float: left;
+
+  margin: 8px 10px 0 0;
+
+  color: var(--color-gold-light);
+  font-family: var(--font-display);
+  font-size: 3.7rem;
+  line-height: 0.72;
+}
+
+.story__values {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+
+  margin-top: 58px;
+}
+
+.story__value {
+  position: relative;
+  padding: 25px 23px;
+
+  border: 1px solid rgba(225, 201, 152, 0.16);
+  background: rgba(255, 255, 255, 0.025);
+
+  backdrop-filter: blur(10px);
+}
+
+.story__value span {
+  color: rgba(225, 201, 152, 0.58);
+  font-size: 0.57rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+}
+
+.story__value h3 {
+  margin-top: 18px;
+
+  color: var(--color-gold-light);
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.story__value p {
+  margin-top: 8px;
+
+  color: rgba(244, 240, 231, 0.65);
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+.story__next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  width: fit-content;
+  margin: 46px auto 0;
+  padding: 12px 17px 12px 22px;
+
+  border: 1px solid rgba(225, 201, 152, 0.34);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.025);
+  color: rgba(244, 240, 231, 0.82);
+
+  font-size: 0.61rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+
+  transition:
+    background var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.story__next i {
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+
+  border: 1px solid rgba(225, 201, 152, 0.28);
+  border-radius: 50%;
+
+  color: var(--color-gold-light);
+  font-style: normal;
+}
+
+.story__next:hover {
+  border-color: rgba(225, 201, 152, 0.7);
+  background: rgba(225, 201, 152, 0.08);
+  transform: translateY(-2px);
+}
+
+@media (min-width: 760px) {
+  .story {
+    padding:
+      110px
+      var(--page-padding-desktop);
+  }
+
+  .story__content {
+    grid-template-columns: 220px 1fr;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .story__number {
+    text-align: left;
+  }
+
+  .story__values {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .story__value {
+    min-height: 190px;
+  }
+}
+
+@media (max-height: 760px) {
+  .story {
+    padding-block: 58px;
+  }
+
+  .story__content {
+    margin-top: 38px;
+  }
+
+  .story__values {
+    margin-top: 38px;
+  }
+}
